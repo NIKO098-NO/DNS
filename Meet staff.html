@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the Diamond Nation Studios staff team - Professional ER:LC roleplay community leadership">
+  <meta name="theme-color" content="#5865f2">
+  <title>Meet Our Staff | Diamond Nation Studios</title>
+  <link rel="icon" href="DNS Logo.webp" type="image/webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      touch-action: manipulation;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    :root {
+      --primary: #5865f2;
+      --primary-dark: #4752c4;
+      --primary-light: #7289da;
+      --nav-offset: 72px;
+      --accent: #00d4ff;
+      --accent-secondary: #ff6b9d;
+      --bg-dark: #0a0a0f;
+      --bg-card: rgba(15,16,21,0.9);
+      --text-primary: #ffffff;
+      --text-secondary: #b5b7c2;
+      --text-muted: #6b7280;
+      --gradient-primary: linear-gradient(135deg, #5865f2, #7289da, #00d4ff);
+      --gradient-accent: linear-gradient(135deg, #ff6b9d, #ff8a5c);
+      --gradient-bg: linear-gradient(135deg, #0a0a0f, #1a1a2e, #0f0f1a);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--text-primary);
+      background: var(--gradient-bg);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      font-family: 'Inter', 'Outfit', system-ui, sans-serif;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(88,101,242,0.5); }
+      50% { box-shadow: 0 0 40px rgba(88,101,242,0.8); }
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 15, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(88, 101, 242, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      padding: 10px 30px;
+      background: rgba(10, 10, 15, 0.95);
+    }
+
+    .nav-logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo i {
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 5px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gradient-primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-discord {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      background: var(--gradient-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+    }
+
+    .nav-discord:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(88, 101, 242, 0.5);
+    }
+
+    .mobile-menu {
+      display: none;
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: rgba(88, 101, 242, 0.15);
+      border: 1px solid rgba(88, 101, 242, 0.3);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--primary-light);
+      margin-bottom: 25px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      line-height: 1.1;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    .hero h1 .gradient-text {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+      animation: fadeInUp 1s ease-out 0.4s both;
+    }
+
+    /* Staff Container */
+    .staff-container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 40px 20px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .staff-wrapper {
+      position: relative;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .staff-wrapper:nth-child(1) { animation-delay: 0.1s; }
+    .staff-wrapper:nth-child(2) { animation-delay: 0.2s; }
+    .staff-wrapper:nth-child(3) { animation-delay: 0.3s; }
+    .staff-wrapper:nth-child(4) { animation-delay: 0.4s; }
+    .staff-wrapper:nth-child(5) { animation-delay: 0.5s; }
+    .staff-wrapper:nth-child(6) { animation-delay: 0.6s; }
+
+    .staff-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Staff Card */
+    .staff-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      border: 1px solid rgba(88,101,242,0.15);
+      overflow: hidden;
+    }
+
+    .staff-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-primary);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    .staff-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .staff-card::after {
+      content: '';
+      position: absolute;
+      inset: -15px;
+      background: radial-gradient(circle at center, rgba(88,101,242,0.25), transparent 70%);
+      border-radius: 28px;
+      filter: blur(20px);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+
+    .staff-card:hover::after {
+      opacity: 1;
+    }
+
+    .staff-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 30px 80px rgba(88,101,242,0.35);
+      border-color: rgba(88,101,242,0.4);
+    }
+
+    /* Glow behind card */
+    .staff-glow {
+      position: absolute;
+      inset: -12px;
+      background: radial-gradient(circle at center, rgba(88,101,242,0.5), transparent 70%);
+      border-radius: 20px;
+      filter: blur(14px);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      z-index: 0;
+    }
+
+    .staff-wrapper:hover .staff-glow {
+      opacity: 1;
+      animation: glowPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.05); }
+    }
+
+    /* Avatar / Name / Role / Badge */
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .staff-card:hover .avatar {
+      border-color: var(--primary-light);
+      transform: scale(1.08);
+      box-shadow: 0 0 30px rgba(88,101,242,0.4);
+    }
+
+    .name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .role {
+      font-size: 1rem;
+      color: var(--primary-light);
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: rgba(88, 101, 242, 0.15);
+      border: 1px solid rgba(88, 101, 242, 0.4);
+      font-size: 0.85rem;
+      color: #cfd3ff;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .staff-card:hover .badge {
+      background: rgba(88, 101, 242, 0.25);
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0,0,0,0.5);
+      padding: 80px 20px 40px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid rgba(88,101,242,0.1);
+    }
+
+    .footer-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand {
+      max-width: 350px;
+    }
+
+    .footer-logo {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer-logo i {
+      color: var(--primary);
+    }
+
+    .footer-brand p {
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer-social a {
+      width: 45px;
+      height: 45px;
+      background: rgba(88,101,242,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      background: var(--gradient-primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .footer-links h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 25px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    .footer-links a i {
+      font-size: 0.8rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .footer-links a:hover i {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-bottom p {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+    }
+
+    .footer-bottom a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      text-decoration: underline;
+    }
+
+    /* Floating DNS Text */
+    .dns-float {
+      position: fixed;
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-size: clamp(2rem, 6vw, 5rem);
+      color: rgba(255,255,255,0.05);
+      pointer-events: none;
+      animation: dnsFloat 10s ease-in-out forwards;
+      z-index: 0;
+      user-select: none;
+      transform-origin: center;
+      font-weight: 400;
+    }
+
+    @keyframes dnsFloat {
+      0% { opacity: 0; transform: translateY(60px) scale(0.8) rotate(-5deg); }
+      15% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+      85% { opacity: 1; transform: translateY(-30px) scale(1.1) rotate(2deg); }
+      100% { opacity: 0; transform: translateY(-80px) scale(1.3) rotate(5deg); }
+    }
+
+    /* Touch-friendly improvements */
+    button, a, .staff-card, .nav-discord {
+      touch-action: manipulation;
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* Small mobile devices */
+    @media (max-width: 480px) {
+      .hero {
+        padding: 80px 15px 30px;
+      }
+      
+      .hero h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        letter-spacing: 1px;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .staff-container {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        padding: 20px 15px 40px;
+        gap: 20px;
+      }
+      
+      .staff-card {
+        padding: 30px 20px;
+      }
+      
+      .avatar {
+        width: 90px;
+        height: 90px;
+      }
+      
+      .name {
+        font-size: 1.2rem;
+      }
+      
+      .role {
+        font-size: 0.95rem;
+      }
+      
+      .badge {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+      }
+      
+      .footer-content {
+        gap: 30px;
+      }
+    }
+
+    /* Tablet and medium devices */
+    @media (max-width: 1024px) {
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 12px 20px;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(10,10,15,0.98);
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        transform: translateY(-150%);
+        transition: transform 0.4s ease;
+        border-bottom: 1px solid rgba(88,101,242,0.2);
+      }
+
+      .nav-links.active {
+        transform: translateY(0);
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .nav-discord {
+        display: none;
+      }
+
+      .hero {
+        padding: 100px 20px 40px;
+      }
+
+      .staff-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Ensure particle canvas doesn't take document flow space */
+    #particles {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+      display: block;
+    }
+
+    /* Reserve space so fixed navbar doesn't overlap content */
+    .navbar-placeholder {
+      height: var(--nav-offset);
+      width: 100%;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar-placeholder" aria-hidden="true"></div>
+
+  <canvas id="particles"></canvas>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <i class="fas fa-gem"></i>
+    Diamond Nation
+  </a>
+  
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Meet staff.html" class="active">Staff</a></li>
+      <li><a href="Server.html">Servers</a></li>
+      <li><a href="Sponsor.html">Sponsors</a></li>
+      <li><a href="Credits.html">Credits</a></li>
+      <li><a href="Legal.html">Legal</a></li>
+    </ul>
+  
+  <a href="https://discord.gg/MJw9rcCqNT" target="_blank" class="nav-discord">
+    <i class="fab fa-discord"></i>
+    Join Discord
+  </a>
+  
+  <div class="mobile-menu" id="mobileMenu">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-badge">
+    <i class="fas fa-users"></i>
+    Our Team
+  </div>
+  
+  <h1>
+    Meet Our <span class="gradient-text">Staff</span>
+  </h1>
+  
+  <p>The dedicated team keeping everything running smoothly and ensuring the best roleplay experience.</p>
+</section>
+
+<section class="staff-container">
+
+  <div class="staff-wrapper">
+    <a class="staff-link" href="https://discord.com/users/1236801401061900288" target="_blank" rel="noopener">
+      <div class="staff-card">
+        <img class="avatar" src="https://cdn.discordapp.com/avatars/1236801401061900288/3a9a95633d91179723355974fd4e2878.png?size=1024">
+        <div class="name">Zach</div>
+        <div class="role">Founder</div>
+        <div class="badge"><i class="fas fa-crown"></i> Leadership</div>
+      </div>
+    </a>
+    <div class="staff-glow"></div>
+  </div>
+
+  <div class="staff-wrapper">
+    <a class="staff-link" href="https://discord.com/users/1446143206273187924" target="_blank" rel="noopener">
+      <div class="staff-card">
+        <img class="avatar" src="https://cdn.discordapp.com/avatars/1446143206273187924/062c02306d4e530e57ceedad6e83e731.webp?size=1024">
+        <div class="name">ColdDiamond</div>
+        <div class="role">Founder</div>
+        <div class="badge"><i class="fas fa-crown"></i> Leadership</div>
+      </div>
+    </a>
+    <div class="staff-glow"></div>
+  </div>
+
+  <div class="staff-wrapper">
+    <a class="staff-link" href="https://discord.com/users/1413433249518190622" target="_blank" rel="noopener">
+      <div class="staff-card">
+        <img class="avatar" src="https://cdn.discordapp.com/avatars/1413433249518190622/b2962f80f8dc7e084870f8958630e04c.png?size=1024">
+        <div class="name">Niko</div>
+        <div class="role">Co-Founder</div>
+        <div class="badge"><i class="fas fa-crown"></i> Leadership</div>
+      </div>
+    </a>
+    <div class="staff-glow"></div>
+  </div>
+
+
+  <div class="staff-wrapper">
+    <a class="staff-link" href="https://discord.com/users/1334644917221457981" target="_blank" rel="noopener">
+      <div class="staff-card">
+        <img class="avatar" src="https://cdn.discordapp.com/avatars/1334644917221457981/326978cc675b24c67817f4b7bcec2c55.png?size=1024">
+        <div class="name">Fakeo</div>
+        <div class="role">Director</div>
+        <div class="badge"><i class="fas fa-user-tie"></i> Management</div>
+      </div>
+    </a>
+    <div class="staff-glow"></div>
+  </div>
+
+  <div class="staff-wrapper">
+    <a class="staff-link" href="https://discord.com/users/1306735634001428501" target="_blank" rel="noopener">
+      <div class="staff-card">
+        <img class="avatar" src="https://cdn.discordapp.com/avatars/1306735634001428501/bb3b7650f4fa3dd820d90e565bd797bb.png?size=1024">
+        <div class="name">Emmit</div>
+        <div class="role">Director</div>
+        <div class="badge"><i class="fas fa-user-tie"></i> Management</div>
+      </div>
+    </a>
+    <div class="staff-glow"></div>
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <i class="fas fa-gem"></i>
+        Diamond Nation Studios
+      </div>
+      <p>Building professional ER:LC roleplay communities with structured leadership and immersive gameplay experiences.</p>
+      <div class="footer-social">
+        <a href="https://discord.gg/MJw9rcCqNT" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="Meet staff.html"><i class="fas fa-chevron-right"></i> Our Staff</a></li>
+        <li><a href="Server.html"><i class="fas fa-chevron-right"></i> Servers</a></li>
+        <li><a href="Sponsor.html"><i class="fas fa-chevron-right"></i> Sponsors</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="Credits.html"><i class="fas fa-chevron-right"></i> Credits</a></li>
+        <li><a href="Legal.html"><i class="fas fa-chevron-right"></i> Legal</a></li>
+        <li><a href="https://discord.gg/MJw9rcCqNT" target="_blank"><i class="fas fa-chevron-right"></i> Discord</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://discord.gg/MJw9rcCqNT" target="_blank"><i class="fas fa-chevron-right"></i> Support</a></li>
+        <li><a href="Sponsor.html"><i class="fas fa-chevron-right"></i> Sponsorship</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Apply for Staff</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 Diamond Nation Studios • All Rights Reserved</p>
+    <p>Made with <i class="fas fa-heart" style="color: var(--accent-secondary);"></i> by <a href="Credits.html">our team</a></p>
+  </div>
+</footer>
+
+<script>
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobileMenu');
+const navLinks = document.getElementById('navLinks');
+let menuOpen = false;
+
+function toggleMenu() {
+  menuOpen = !menuOpen;
+  navLinks.classList.toggle('active', menuOpen);
+  mobileMenu.setAttribute('aria-expanded', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+}
+
+function closeMenu() {
+  menuOpen = false;
+  navLinks.classList.remove('active');
+  mobileMenu.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+mobileMenu.addEventListener('click', (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (menuOpen && !navLinks.contains(e.target) && !mobileMenu.contains(e.target)) {
+    closeMenu();
+  }
+});
+
+// Close menu on escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && menuOpen) {
+    closeMenu();
+  }
+});
+
+// Handle resize - reset menu on desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && menuOpen) {
+    closeMenu();
+  }
+});
+
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+</script>
+
+<script>
+// Floating DNS text every 8-12 seconds with variation
+function spawnDNS() {
+  const dns = document.createElement("div");
+  dns.className = "dns-float";
+  dns.textContent = "DNS";
+  const x = Math.random() * 70 + 10;
+  const y = Math.random() * 50 + 20;
+  const size = Math.random() * 0.5 + 0.8;
+  dns.style.left = x + "vw";
+  dns.style.top = y + "vh";
+  dns.style.transform = `scale(${size})`;
+  document.body.appendChild(dns);
+  setTimeout(() => dns.remove(), 8000);
+}
+spawnDNS();
+setInterval(() => {
+  spawnDNS();
+}, Math.random() * 4000 + 8000);
+
+/* ===== Particles JS ===== */
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let particlesArray = [];
+let mouse = { x: null, y: null };
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+class Particle {
+  constructor(){
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 3 + 1;
+    this.speedX = (Math.random() - 0.5) * 0.5;
+    this.speedY = (Math.random() - 0.5) * 0.5;
+    this.baseSize = this.size;
+  }
+  update(){
+    // Mouse interaction
+    if(mouse.x && mouse.y){
+      const dx = mouse.x - this.x;
+      const dy = mouse.y - this.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if(distance < 100){
+        this.size = this.baseSize * (1 + (100 - distance) / 100 * 0.5);
+        this.speedX += dx / distance * 0.01;
+        this.speedY += dy / distance * 0.01;
+      } else {
+        this.size = this.baseSize;
+      }
+    }
+
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    // Bounce off edges
+    if(this.x < 0 || this.x > canvas.width){
+      this.speedX *= -1;
+    }
+    if(this.y < 0 || this.y > canvas.height){
+      this.speedY *= -1;
+    }
+
+    // Friction
+    this.speedX *= 0.99;
+    this.speedY *= 0.99;
+  }
+  draw(){
+    ctx.fillStyle = 'rgba(88,101,242,0.4)';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function init(){
+  particlesArray = [];
+  // Reduce particles on mobile for better performance
+  const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768;
+  const particleCount = isMobile ? 30 : 100;
+  
+  for(let i = 0; i < particleCount; i++){
+    particlesArray.push(new Particle());
+  }
+}
+
+// Reinitialize particles on resize for performance optimization
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    init();
+  }, 250);
+});
+
+function animate(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particlesArray.forEach(p => {
+    p.update();
+    p.draw();
+  });
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener('mousemove', (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
+window.addEventListener('mouseout', () => {
+  mouse.x = null;
+  mouse.y = null;
+});
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  init();
+});
+
+init();
+animate();
+</script>
+
+</body>
+</html>
